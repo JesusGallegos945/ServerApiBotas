@@ -62,4 +62,19 @@ router.post('/eliminar', async (req, res) => {
   }
 });
 
+module.exports = (sequelize, DataTypes) => {
+  const Login = sequelize.define('login', {
+      name: DataTypes.STRING,
+      age: DataTypes.INTEGER,
+      tel: DataTypes.STRING,
+      email: DataTypes.STRING,
+      estado: DataTypes.STRING,
+      area: DataTypes.STRING,
+      pais: DataTypes.STRING
+  }, {
+      timestamps: false
+  });
+  return Login;
+};
+
 module.exports = router;
