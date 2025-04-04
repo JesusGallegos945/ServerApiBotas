@@ -1,0 +1,15 @@
+Bueno en este documento se crearan unos pautnes de como creamo este servidor, primero:
+
+Creamos el servidor usando el comando: npm init
+
+Despues modificamos el script del package.json: 
+"scripts": {
+    "dev": "nodemon ./src/index.js"
+  }
+
+Instalamos dos componentes, uno es modulos express, y el otro es nodemon:
+npm i express nodemon (este comando crea la capeta de node_modules)
+
+Para levantar el servidor usamos el comando:
+npm run dev
+
